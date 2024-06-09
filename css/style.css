@@ -1,0 +1,70 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    background-color: #e0e0e0;
+}
+
+.title {
+    background-color: #b56576;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    color: white;
+}
+
+#section1 .title {
+    background-color: #b56576;
+}
+
+#section2 .title {
+    background-color: #e07a5f;
+}
+
+#section3 .title {
+    background-color: #f4a261;
+}
+
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: 30%;
+        margin: 1.66%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 46%;
+        margin: 2%;
+    }
+
+    #section3 {
+        width: 96%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 96%;
+        margin: 2%;
+    }
+}
+ 
+
